@@ -6,7 +6,7 @@ export function GithubUser ( {username} ) {
 
   async function fetchData(username) {
     try{
-      const response = await fetch (`https://api.github.com/users/${username}`.);
+      const response = await fetch (`https://api.github.com/users/${username}`);
       const data= await response.json();
       setUser(data);
       }catch(error){
